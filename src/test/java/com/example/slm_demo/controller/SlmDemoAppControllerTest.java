@@ -23,4 +23,10 @@ class SlmDemoAppControllerTest {
         double number = -8;
         assertEquals(64, demoController.calculateSquare(number));
     }
+
+    @Test
+    void calculateSquareTestZero() {
+        double number = 0;
+        assertEquals(0, demoController.calculateSquare(number));
+    }
 }
